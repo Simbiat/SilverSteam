@@ -17,7 +17,7 @@ if (empty($_GET['offset'])) {
 }
 
 // ######################### REQUIRE BACK-END ############################
-//require_once "../../genfunc/config.php";
+//require_once ".././config.php";
 //require_once('./css.php');
 
 $dirmatches = glob("./depot manifests/".$appid." - *");

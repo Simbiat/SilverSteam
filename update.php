@@ -10,7 +10,7 @@ ob_start();
 set_time_limit(320);
 
 // ######################### REQUIRE BACK-END ############################
-require_once "../genfunc/config.php";
+require_once "./config.php";
 require_once('./css.php');
 
 $depotlist = fopen("./apps/sisinstall/depotlist_full.txt", "r");

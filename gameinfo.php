@@ -15,7 +15,7 @@ if (empty($_GET['appid'])) {
 }
 
 // ######################### REQUIRE BACK-END ############################
-require_once "../genfunc/config.php";
+require_once "./config.php";
 require_once('./css.php');
 echo "<script src=\"/ssc/jquery/jquery-2.0.3.min.js\"></script>";
 echo "<script src=\"/ssc/jquery/jquery.fastLiveFilter.js\"></script>";

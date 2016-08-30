@@ -3,7 +3,7 @@ require_once('./commonfunc.php');
 
 ini_set( "display_errors", 0);
 
-require_once "../genfunc/config.php";
+require_once "./config.php";
 
 	echo "<title>SilverSteam</title>";
 	echo "<meta property=\"og:type\"   content=\"website\" /> 
