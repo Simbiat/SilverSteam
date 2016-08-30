@@ -1,0 +1,1 @@
+<img src="data:image/jpeg;base64,<?php echo base64_encode(file_get_contents("http://cdn.akamai.steamstatic.com/steam/apps/208650/ss_7c7618583833f22e2d8dddf04567d5b2693f488f.1920x1080.jpg")); ?>" />
