@@ -36,9 +36,27 @@ jQuery.fn.fastLiveFilter = function(list, options) {
 				(li.textContent || li.innerText || "") : 
 				$(li).find(options.selector).text();
 			
-			if ((innerText.toLowerCase().indexOf(filter) >= 0 && $(li).attr('type') != "dlc") || filter == $(li).attr('appid')) {
+			if (innerText.toLowerCase().indexOf(filter) >= 0) {
+				if ($(li).attr('type') != "dlc") {
+					if (li.style.display == "none") {
+						li.style.display = "block";
+					}
+				} else {
+					if (filter == $(li).attr('appid')) {
+						if (li.style.display == "none") {
+							li.style.display = "block";
+						}
+						numShown++;
+					} else {
+						if (li.style.display != "none") {
+							li.style.display = "none";
+						}
+					}
+				}
+				numShown++;
+			} else if (filter == $(li).attr('appid')) {
 				if (li.style.display == "none") {
-					li.style.display = oldDisplay;
+					li.style.display = "block";
 				}
 				numShown++;
 			} else {
